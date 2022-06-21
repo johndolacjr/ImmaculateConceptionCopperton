@@ -31,9 +31,10 @@
         <div class="navbar-nav">
           {% if user.is_authenticated %}
           <a class="nav-item nav-link" id="home" href="/">Home</a>
+          <a class="nav-item nav-link" id="home" href="/">Calendar</a>
           <a class="nav-item nav-link" id="home" href="/">Council</a>
-          <a class="nav-item nav-link" id="home" href="/">Social</a>
           <a class="nav-item nav-link" id="home" href="/">Financial</a>
+          <a class="nav-item nav-link" id="home" href="/">Social</a>
           <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
           {% else %}
           <a class="nav-item nav-link" id="login" href="/login">Login</a>
@@ -41,8 +42,8 @@
           {% endif %}
         </div>
       </div>
-      <div class="navbar-dark" id="navbar-content"> 
-        <p class="nav-dark" id="navbar-content" href="/">Immaculate Conception Parish</p>
+      <div class="nav-item" id="nav-link"> 
+        <h2 class="text-light" id="home" href="/">Immaculate Conception Parish of Copperton, UT</h2>
       </div>
     </nav>
 

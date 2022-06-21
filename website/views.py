@@ -25,7 +25,7 @@ def home():
 
     return render_template("home.html", user=current_user)
 
-@views.route('/council')
+@views.route('/council', methods=['GET', 'POST'])
 def council():
     return render_template("council.html", text="Test")
 

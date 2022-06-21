@@ -31,10 +31,10 @@
         <div class="navbar-nav">
           {% if user.is_authenticated %}
           <a class="nav-item nav-link" id="home" href="/">Home</a>
-          <a class="nav-item nav-link" id="home" href="/">Calendar</a>
-          <a class="nav-item nav-link" id="home" href="/">Council</a>
-          <a class="nav-item nav-link" id="home" href="/">Financial</a>
-          <a class="nav-item nav-link" id="home" href="/">Social</a>
+          <a class="nav-item nav-link" id="calendar" href="/calendar">Calendar</a>
+          <a class="nav-item nav-link" id="council" href="/council">Council</a>
+          <a class="nav-item nav-link" id="financial" href="/financial">Financial</a>
+          <a class="nav-item nav-link" id="social" href="/social">Social</a>
           <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
           {% else %}
           <a class="nav-item nav-link" id="login" href="/login">Login</a>

@@ -25,9 +25,21 @@ def home():
 
     return render_template("home.html", user=current_user)
 
-@views.route('/council', methods=['GET', 'POST'])
+@views.route('/calendar')
+def calendar():
+    return render_template("calendar.html")
+
+@views.route('/council')
 def council():
-    return render_template("council.html", text="Test")
+    return render_template("council.html")
+
+@views.route('/financial')
+def financial():
+    return render_template("financial.html")
+
+@views.route('/social')
+def social():
+    return render_template("social.html")
 
 @views.route('/delete-note', methods=['POST'])
 def delete_note():
@@ -40,4 +52,3 @@ def delete_note():
             db.session.commit()
 
     return jsonify({})
-

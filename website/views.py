@@ -29,9 +29,9 @@ def home():
 def calendar():
     return render_template("calendar.html", user=current_user)
 
-@views.route('/council')
-def council():
-    return render_template("council.html", user=current_user)
+@views.route('/history')
+def history():
+    return render_template("history.html", user=current_user)
 
 @views.route('/financial')
 def financial():

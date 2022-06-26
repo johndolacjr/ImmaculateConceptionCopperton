@@ -27,19 +27,19 @@ def home():
 
 @views.route('/calendar')
 def calendar():
-    return render_template("calendar.html")
+    return render_template("calendar.html", user=current_user)
 
 @views.route('/council')
 def council():
-    return render_template("council.html")
+    return render_template("council.html", user=current_user)
 
 @views.route('/financial')
 def financial():
-    return render_template("financial.html")
+    return render_template("financial.html", user=current_user)
 
 @views.route('/social')
 def social():
-    return render_template("social.html")
+    return render_template("social.html", user=current_user)
 
 @views.route('/delete-note', methods=['POST'])
 def delete_note():

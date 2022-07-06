@@ -1,17 +1,8 @@
-# from flask import Flask, render_template
-# from flask_fontawesome import FontAwesome
 from flask import Blueprint, render_template, request, flash, jsonify
 from flask_login import login_required, current_user
 from .models import Note
 from . import db
 import json
-# import fontawesome as fa
-
-# print(fa.icons['thumbs-up'])
-
-# app = Flask(__name__)
-# fa = FontAwesome(app)
-# app.run(host='127.0.0.1:5000', port=8080)
 
 views = Blueprint('views', __name__)
 
@@ -30,10 +21,6 @@ def home():
             flash('Note added!', category='success')
 
     return render_template("home.html", user=current_user)
-
-# @views.route('/base.html')
-# def base():
-#     return render_template('base.html', user=current_user)
 
 @views.route('/calendar')
 def calendar():

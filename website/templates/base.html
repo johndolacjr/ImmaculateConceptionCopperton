@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="../static/bootstrap.min.css">
         <link rel="stylesheet" href="../static/main.css">
 
-        <title>{% block title %}Immaculate Conception of Copperton{% endblock %}</title>
+        <title>{% block title %}Immaculate Conception: Copperton{% endblock %}</title>
       </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,10 +33,10 @@
         <div class="navbar-nav">
           {% if user.is_authenticated %}
           <a class="nav-item nav-link" id="home" href="/">Home</a>
-          <a class="nav-item nav-link" id="calendar" href="/calendar">Calendar</a>
-          <a class="nav-item nav-link" id="history" href="/history">History</a>
-          <a class="nav-item nav-link" id="financial" href="/financial">Financial</a>
-          <a class="nav-item nav-link" id="social" href="/social">Social</a>
+          <a class="nav-item nav-link" id="calendar" href="/calendar">Church Calendar</a>
+          <a class="nav-item nav-link" id="history" href="/history">KoC: Council 17140</a>
+          <a class="nav-item nav-link" id="financial" href="/financial">Donations</a>
+          <a class="nav-item nav-link" id="social" href="/social">Our Community</a>
           <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
           {% else %}
           <a class="nav-item nav-link" id="login" href="/login">Login</a>
@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="nav-item" id="nav-link"> 
-        <h2 class="text-light" id="home" href="/">Immaculate Conception Parish of Copperton, UT</h2>
+        <h2 class="text-light" id="home" href="/">Immaculate Conception Parish: Copperton, UT</h2>
       </div>
     </nav>
 
@@ -166,13 +166,13 @@
               <a class="text-white">CCD</a>
             </li>
             <li>
-              <a href="#!" class="text-white">First Holy Communion</a>
+              <a class="text-white">First Holy Communion</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Baptismals</a>
+              <a class="text-white">Baptismals</a>
             </li>
             <li>
-              <a href="#!" class="text-white">RCIA</a>
+              <a class="text-white">RCIA</a>
             </li>
           </ul>
         </div>
@@ -213,7 +213,7 @@
         <!--Grid column-->
         <div class="col-auto">
           <p class="pt-2">
-            <strong>Sign up for our Bulletin</strong>
+            <strong>Bulletin Sign Up</strong>
           </p>
         </div>
         <!--Grid column-->

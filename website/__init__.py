@@ -1,5 +1,3 @@
-#NOTE FOR CHRIS: The double underscores makes the website folder a python package. 
-
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path

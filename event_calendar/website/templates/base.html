@@ -49,6 +49,8 @@
       </div>
     </nav>
 
+    <h1 align="center">Search Function - (BL)</h1>
+    
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
     messages %} {% for category, message in messages %} {% if category ==
     'error' %}
@@ -202,25 +204,26 @@
   </div>
   <!-- Grid container -->
 
-  Section: Form
+  <!-- Section: Form -->
+          
   <section class="">
     <form action="">
       <!--Grid row-->
       <div class="row d-flex justify-content-center">
-        <!--Grid column-->
-        <div class="col-auto">
-          <p class="pt-2">
-            <strong>Bulletin Sign Up</strong>
-          </p>
-        </div>
-        <!--Grid column-->
+      <!-- Grid column -->
+      <div class="col-centered-12">
+        <p class="col-justify-content-center">
+          <strong>Bulletin Sign Up</strong>
+        </p>
+      </div>
+      <!--Grid column-->
 
         <!--Grid column-->
         <div class="col-md-5 col-12">
           <!-- Email input -->
           <div class="form-outline form-white mb-4">
             <input type="email" id="form5Example21" class="form-control" />
-            <label class="form-label" for="form5Example21">Email address</label>
+            <label class="form-label" for="form5Example21">Enter Email address</label>
           </div>
         </div>
         <!--Grid column-->

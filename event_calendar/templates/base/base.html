@@ -273,7 +273,7 @@
             <li>
               <a class="app-menu__item" id="social" href="/social"><i class="app-menu__icon fa fa-share"></i><span class="app-menu__label">Our Community</span></a>
             </li>
-            <li>
+            {% comment %} <li>
               <a class="app-menu__item active" id="logout" href="/logout"><i class="app-menu__icon fa fa-logout"></i><span class="app-menu__label">Logout</span></a>
             </li>
             {% else %}
@@ -282,18 +282,18 @@
             </li>
             <li>
               <a class="app-menu__item active" id="signUp" href="/sign-up"><i class="app-menu__icon fa fa-sign-up"></i><span class="app-menu__label">Sign Up</span></a>
-            </li>
+            </li> {% endcomment %}
             {% endif %}
           </ul>
                 {% comment %} </div>
               </div> {% endcomment %}
           <ul class="app-nav">
-            <li class="app-search">
+            {% comment %} <li class="app-search">
               <input class="app-search__input" type="search" placeholder="Search" />
               <button class="app-search__button"><i class="fa fa-search"></i></button>
-            </li>
+            </li> {% endcomment %}
             <!--Notification Menu-->
-            <li class="dropdown">
+            {% comment %} <li class="dropdown">
               <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
               <ul class="app-notification dropdown-menu dropdown-menu-right">
                 <li class="app-notification__title">You have 4 new notifications.</li>
@@ -369,7 +369,7 @@
                 </div>
                 <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
               </ul>
-            </li>
+            </li> {% endcomment %}
             <!-- User Menu-->
             <li class="dropdown">
               <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>

@@ -1,5 +1,10 @@
 from .event_list import AllEventsListView, RunningEventsListView
 from .other_views import (
+    Home,
+    Calendar2,
+    Financial,
+    History,
+    Social,
     CalendarViewNew,
     CalendarView,
     create_event,
@@ -11,6 +16,11 @@ from .other_views import (
 
 
 __all__ = [
+    Home,
+    Calendar2,
+    Financial,
+    History,
+    Social,
     AllEventsListView,
     RunningEventsListView,
     CalendarViewNew,

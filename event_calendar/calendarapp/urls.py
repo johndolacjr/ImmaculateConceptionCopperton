@@ -6,6 +6,11 @@ app_name = "calendarapp"
 
 
 urlpatterns = [
+    path("financial/", views.Financial.as_view(), name="financial"),
+    path("home/", views.Home.as_view(), name="home"),
+    path("social/", views.Social.as_view(), name="social"),
+    path("calendar2/", views.Calendar2.as_view(), name="calendar2"),
+    path("history/", views.History.as_view(), name="history"),
     path("calender/", views.CalendarViewNew.as_view(), name="calendar"),
     path("calenders/", views.CalendarView.as_view(), name="calendars"),
     path("event/new/", views.create_event, name="event_new"),

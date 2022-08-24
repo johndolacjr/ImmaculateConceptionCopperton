@@ -1,180 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
-    <head>
-        <meta name="description" content="Event Dashboard" />
-        <!-- Twitter meta-->
-        {% comment %} <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@sajib1066" />
-        <meta property="twitter:creator" content="@sajib1066" /> {% endcomment %}
-        <!-- Open Graph Meta-->
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Vali Admin" />
-        <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme" />
-        {% comment %} <meta property="og:url" content="https://sajib1066.github.io/" />
-        <meta property="og:image" content="https://sajib1066.github.io/images/me.jpg" /> {% endcomment %}
-        <meta property="og:description" content="Event Dashboard" />
-        <title>{% block title %}{% endblock title  %}</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Main CSS-->
-        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
-        <!-- Font-icon css-->
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-        {% block extracss %}
-        {% endblock extracss %}
-    </head>
-    <body class="app sidebar-mini">
-        <!-- Navbar-->
-        <header class="app-header">
-            <a class="app-header__logo" href="#">Event Calendar</a>
-            <!-- Sidebar toggle button-->
-            <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-            <!-- Navbar Right Menu-->
-            <ul class="app-nav">
-                <li class="app-search">
-                    <input class="app-search__input" type="search" placeholder="Search" />
-                    <button class="app-search__button"><i class="fa fa-search"></i></button>
-                </li>
-                <!--Notification Menu-->
-                <li class="dropdown">
-                    <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
-                    <ul class="app-notification dropdown-menu dropdown-menu-right">
-                        <li class="app-notification__title">You have 4 new notifications.</li>
-                        <div class="app-notification__content">
-                            <li>
-                                <a class="app-notification__item" href="javascript:;">
-                                    <span class="app-notification__icon">
-                                        <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
-                                    </span>
-                                    <div>
-                                        <p class="app-notification__message">Lisa sent you a mail</p>
-                                        <p class="app-notification__meta">2 min ago</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="app-notification__item" href="javascript:;">
-                                    <span class="app-notification__icon">
-                                        <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span>
-                                    </span>
-                                    <div>
-                                        <p class="app-notification__message">Mail server not working</p>
-                                        <p class="app-notification__meta">5 min ago</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="app-notification__item" href="javascript:;">
-                                    <span class="app-notification__icon">
-                                        <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span>
-                                    </span>
-                                    <div>
-                                        <p class="app-notification__message">Transaction complete</p>
-                                        <p class="app-notification__meta">2 days ago</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <div class="app-notification__content">
-                                <li>
-                                    <a class="app-notification__item" href="javascript:;">
-                                        <span class="app-notification__icon">
-                                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
-                                        </span>
-                                        <div>
-                                            <p class="app-notification__message">Lisa sent you a mail</p>
-                                            <p class="app-notification__meta">2 min ago</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="app-notification__item" href="javascript:;">
-                                        <span class="app-notification__icon">
-                                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span>
-                                        </span>
-                                        <div>
-                                            <p class="app-notification__message">Mail server not working</p>
-                                            <p class="app-notification__meta">5 min ago</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="app-notification__item" href="javascript:;">
-                                        <span class="app-notification__icon">
-                                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span>
-                                        </span>
-                                        <div>
-                                            <p class="app-notification__message">Transaction complete</p>
-                                            <p class="app-notification__meta">2 days ago</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </div>
-                        </div>
-                        <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
-                    </ul>
-                </li>
-                <!-- User Menu-->
-                <li class="dropdown">
-                    <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
-                    <ul class="dropdown-menu settings-menu dropdown-menu-right">
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="fa fa-cog fa-lg"></i> Settings</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="fa fa-user fa-lg"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="{% url 'accounts:signout' %}"><i class="fa fa-sign-out fa-lg"></i> Sign Out</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </header>
-        <!-- Sidebar menu-->
-        <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-        <aside class="app-sidebar">
-            {% comment %} <div class="app-sidebar__user">
-                <img class="app-sidebar__user-avatar" src="https://sajib1066.github.io/images/me.jpg" alt="User Image" height="50px" width="50px"/>
-                <div>
-                    <p class="app-sidebar__user-name">Sajib Hossain</p>
-                    <p class="app-sidebar__user-designation">Software Engineer</p>
-                </div>
-            </div> {% endcomment %}
+  {% load static %}
+  <head>
+    <meta name="description" content="Event Dashboard" />
+    <!-- Twitter meta-->
+    {% comment %} <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@sajib1066" />
+    <meta property="twitter:creator" content="@sajib1066" /> {% endcomment %}
+    <!-- Open Graph Meta-->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vali Admin" />
+    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme" />
+    {% comment %} <meta property="og:url" content="https://sajib1066.github.io/" />
+    <meta property="og:image" content="https://sajib1066.github.io/images/me.jpg" /> {% endcomment %}
+    <meta property="og:description" content="Event Dashboard" />
+    <title>{% block title %}Immaculate Conception: Copperton{% endblock title  %}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/main.css">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    {% block extracss %}
+    {% endblock extracss %}
+  </head>
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header">
+      {% comment %} <a class="app-header__logo" href="#">Event Calendar</a> {% endcomment %}
+      <!-- Sidebar toggle button-->
+      <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+
+
+
+
+        <div class="nav-item" id="nav-link"> 
+          <h2 class="text-light">Immaculate Conception Parish: Copperton, UT</h2>
+          {% comment %} <h2 class="text-light" id="home" href="/">Immaculate Conception Parish: Copperton, UT</h2> {% endcomment %}
+        </div>
+      </nav>
+              
+        {% comment %} <h1 align="center">Search Function - (BL)</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %} {% if
+        messages %} {% for category, message in messages %} {% if category ==
+        'error' %}
+        <div class="alert alert-danger alter-dismissable fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% else %}
+        <div class="alert alert-success alter-dismissable fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endif %} {% endfor %} {% endif %} {% endwith %}
+
+        <div class="container">{% block content %} {% endblock %}</div> {% endcomment %}
+    </header>
+      <!-- Sidebar menu-->
+      {% comment %} <div class="app-sidebar__overlay" data-toggle="sidebar"></div> {% endcomment %}
+      <aside class="app-sidebar">
+        {% comment %} <div class="app-sidebar__user">
+          <img class="app-sidebar__user-avatar" src="https://sajib1066.github.io/images/me.jpg" alt="User Image" height="50px" width="50px"/>
+          <div>
+            <p class="app-sidebar__user-name">Sajib Hossain</p>
+            <p class="app-sidebar__user-designation">Software Engineer</p>
+          </div>
+        </div> {% endcomment %}
+          {% if user.is_authenticated %}
+            <li>
+              <a class="app-menu__item active" id="home" href="/home"><i class="app-menu__icon fa fa-home"></i><span class="app-menu__label">Home</span></a>
+            </li>
             <ul class="app-menu">
-                <li>
-                    <a class="app-menu__item active" href="{% url 'dashboard' %}"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a>
-                </li>
-                <li>
-                    <a class="app-menu__item" href="{% url 'calendarapp:calendar' %}"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Calendar</span></a>
-                </li>
-                <li class="treeview">
-                    <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Events</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-                    <ul class="treeview-menu">
-                        <li>
-                            <a class="treeview-item" href="{% url 'calendarapp:running_events' %}"><i class="icon fa fa-circle-o"></i> Running</a>
-                        </li>
-                        <li>
-                            <a class="treeview-item" href="{% url 'calendarapp:running_events' %}"><i class="icon fa fa-circle-o"></i> Upcoming</a>
-                        </li>
-                        <li>
-                            <a class="treeview-item" href="{% url 'calendarapp:all_events' %}"><i class="icon fa fa-circle-o"></i> All</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Docs</span></a>
-                </li>
+              <li>
+                <a class="app-menu__item" href="{% url 'dashboard' %}"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a>
+              </li>
+              <li>
+                <a class="app-menu__item" href="{% url 'calendarapp:calendar' %}"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Calendar</span></a>
+              </li>
+              <li class="treeview">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Events</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a class="treeview-item" href="{% url 'calendarapp:running_events' %}"><i class="icon fa fa-circle-o"></i> Running</a>
+                    </li>
+                    <li>
+                      <a class="treeview-item" href="{% url 'calendarapp:running_events' %}"><i class="icon fa fa-circle-o"></i> Upcoming</a>
+                    </li>
+                    <li>
+                      <a class="treeview-item" href="{% url 'calendarapp:all_events' %}"><i class="icon fa fa-circle-o"></i> All</a>
+                    </li>
+                  </ul>
+              </li>
+              <li>
+                <a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Docs</span></a>
+              </li>
+              <li>
+                <a class="app-menu__item" id="calendar2" href="/calendar2"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Church Calendar</span></a>
+              </li>
+              <li>
+                <a class="app-menu__item" id="history" href="/history"><i class="app-menu__icon fa fa-history"></i><span class="app-menu__label">The Knight's Corner</span></a>
+              </li>
+              <li>
+                <a class="app-menu__item" id="financial" href="/financial"><i class="app-menu__icon fa fa-money"></i><span class="app-menu__label">Donations</span></a>
+              </li>
+              <li>
+                <a class="app-menu__item" id="social" href="/social"><i class="app-menu__icon fa fa-share"></i><span class="app-menu__label">Our Community</span></a>
+              </li>
+              <li>
+                <a class="app-menu__item active" id="logout" href="/logout"><i class="app-menu__icon fa fa-logout"></i><span class="app-menu__label">Logout</span></a>
+              </li>
+              {% else %}
+              <li>
+                <a class="app-menu__item active" id="login" href="/login"><i class="app-menu__icon fa fa-login"></i><span class="app-menu__label">Login</span></a>
+              </li>
+              <li>
+                <a class="app-menu__item active" id="signUp" href="/sign-up"><i class="app-menu__icon fa fa-sign-up"></i><span class="app-menu__label">Sign Up</span></a>
+              </li>
+              {% endif %}
             </ul>
-        </aside>
-        <main class="app-content">
-            <div class="app-title">
-                {% block breadcrumb %}
-                {% endblock breadcrumb %}
+                {% comment %} </div>
+              </div> {% endcomment %}
+              <ul class="app-nav">
+              <li class="app-search">
+                  <input class="app-search__input" type="search" placeholder="Search" />
+                  <button class="app-search__button"><i class="fa fa-search"></i></button>
+              </li>
+              <!--Notification Menu-->
+              <li class="dropdown">
+                <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
+                <ul class="app-notification dropdown-menu dropdown-menu-right">
+                  <li class="app-notification__title">You have 4 new notifications.</li>
+                  <div class="app-notification__content">
+                    <li>
+                      <a class="app-notification__item" href="javascript:;">
+                        <span class="app-notification__icon">
+                          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
+                        </span>
+                        <div>
+                          <p class="app-notification__message">Lisa sent you a message</p>
+                          <p class="app-notification__meta">2 min ago</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="app-notification__item" href="javascript:;">
+                        <span class="app-notification__icon">
+                          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span>
+                        </span>
+                        <div>
+                          <p class="app-notification__message">Mail server not working</p>
+                          <p class="app-notification__meta">5 min ago</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="app-notification__item" href="javascript:;">
+                        <span class="app-notification__icon">
+                          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span>
+                        </span>
+                        <div>
+                          <p class="app-notification__message">Transaction complete</p>
+                          <p class="app-notification__meta">2 days ago</p>
+                        </div>
+                      </a>
+                    </li>
+                    <div class="app-notification__content">
+                      <li>
+                        <a class="app-notification__item" href="javascript:;">
+                          <span class="app-notification__icon">
+                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
+                          </span>
+                          <div>
+                            <p class="app-notification__message">Lisa sent you a message</p>
+                            <p class="app-notification__meta">2 min ago</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="app-notification__item" href="javascript:;">
+                          <span class="app-notification__icon">
+                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span>
+                          </span>
+                          <div>
+                            <p class="app-notification__message">Mail server not working</p>
+                            <p class="app-notification__meta">5 min ago</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="app-notification__item" href="javascript:;">
+                          <span class="app-notification__icon">
+                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span>
+                          </span>
+                          <div>
+                            <p class="app-notification__message">Transaction complete</p>
+                            <p class="app-notification__meta">2 days ago</p>
+                          </div>
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                  <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
+                </ul>
+              </li>
+              <!-- User Menu-->
+              <li class="dropdown">
+                <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+                <ul class="dropdown-menu settings-menu dropdown-menu-right">
+                  <li>
+                    <a class="dropdown-item" href="#"><i class="fa fa-cog fa-lg"></i> Settings</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><i class="fa fa-user fa-lg"></i> Profile</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{% url 'accounts:signout' %}"><i class="fa fa-sign-out fa-lg"></i> Sign Out</a>
+                  </li>
+                </ul>
+              </li>
+        </ul>
+      </aside>
+      <main class="app-content">
+          <div class="app-title">
+              {% block breadcrumb %}
+              {% endblock breadcrumb %}
+          </div>
+          {% block content %}
+          {% endblock content %}
+            <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+    
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/ImmaculateConceptionCopperton" role="button">
+          <i class="fa fa-facebook-f"></i>
+        </a>
+    
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button">
+          <i class="fa fa-google"></i>
+        </a>
+    
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/koc17140?igshid=YmMyMTA2M2Y=" role="button">
+          <i class="fa fa-instagram"></i>
+        </a>
+    
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" role="button">
+          <i class="fa fa-linkedin"></i>
+        </a>
+    
+      </section>
+      <!-- End Section: Social media -->
+    
+      <!-- Section: Form -->
+    
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <a> Immaculate Conception Church </a>
+        <p> 8892 W State Highway Copperton, UT 84006 </p>
+        <a> (801)-569-2706 </a>
+        </p>
+      </section>
+      <!-- Section: Text -->
+    
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Sunday Schedule:</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="text-white">Rosary: 9:00am</a>
+              </li>
+              <li>
+                <a class="text-white">Mass: 9:30am </a>  
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Confession Schedule</h5>
+    
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="text-white">Saturdays: 5:00pm</a>
+              </li>
+              <!-- <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li> -->
+            </ul>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Church Offerings</h5>
+    
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="text-white">CCD</a>
+              </li>
+              <li>
+                <a class="text-white">First Holy Communion</a>
+              </li>
+              <li>
+                <a class="text-white">Baptismals</a>
+              </li>
+              <li>
+                <a class="text-white">RCIA</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Pastor</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="text-white">Father Lourduraj Gally Gregory</a>
+                <div> </div> 
+              </li> 
+            </ul>
+              <h5 class="text-uppercase">Deacon</h5>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="text-white">Paul Graham</a>
+                  </li>
+                </ul>
+              <!-- <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li> -->
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+    
+    <!-- Section: Form -->
+            
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+        <!-- Grid column -->
+        <div class="col-centered-12">
+          <p class="col-justify-content-center">
+            <strong>Bulletin Sign Up</strong>
+          </p>
+        </div>
+        <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Enter Email address</label>
             </div>
-            {% block content %}
-            {% endblock content %}
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
         </main>
         <!-- Essential javascripts for application to work-->
         {% include 'base/js.html' %}

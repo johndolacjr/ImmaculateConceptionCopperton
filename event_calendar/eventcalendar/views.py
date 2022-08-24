@@ -5,6 +5,31 @@ from django.shortcuts import render
 from calendarapp.models import Event
 
 
+class Financial(LoginRequiredMixin, View):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "financial.html"
+
+class Home(LoginRequiredMixin, View):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "home.html"
+
+class Social(LoginRequiredMixin, View):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "social.html"
+
+class Calendar2(LoginRequiredMixin, View):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "calendar2.html"
+
+class History(LoginRequiredMixin, View):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "history.html"
+    
 class DashboardView(LoginRequiredMixin, View):
     login_url = "accounts:signin"
     template_name = "calendarapp/dashboard.html"

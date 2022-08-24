@@ -143,3 +143,28 @@ class CalendarViewNew(LoginRequiredMixin, generic.View):
             return redirect("calendarapp:calendar")
         context = {"form": forms}
         return render(request, self.template_name, context)
+
+class Financial(LoginRequiredMixin, generic.ListView):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "financial.html"
+
+class Home(LoginRequiredMixin, generic.ListView):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "home.html"
+
+class Social(LoginRequiredMixin, generic.ListView):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "social.html"
+
+class Calendar2(LoginRequiredMixin, generic.ListView):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "calendar2.html"
+
+class History(LoginRequiredMixin, generic.ListView):
+    login_url = "accounts:signin"
+    model = Event
+    template_name = "history.html"

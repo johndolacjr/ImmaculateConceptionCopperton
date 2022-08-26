@@ -225,7 +225,7 @@
     </header>
       <!-- Sidebar menu-->
       {% comment %} <div class="app-sidebar__overlay" data-toggle="sidebar"></div> {% endcomment %}
-      <aside class="app-sidebar">
+      {% comment %} <aside class="app-sidebar"> {% endcomment %}
         {% comment %} <div class="app-sidebar__user">
           <img class="app-sidebar__user-avatar" src="https://sajib1066.github.io/images/me.jpg" alt="User Image" height="50px" width="50px"/>
           <div>
@@ -386,7 +386,7 @@
             </ul>
           </li>
         </ul> {% endcomment %}
-        </aside>
+        {% comment %} </aside> {% endcomment %}
         <main class="app-content">
         <div class="app-title">
           {% block breadcrumb %}

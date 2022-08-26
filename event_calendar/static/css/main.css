@@ -14866,7 +14866,8 @@ be a descendant of the grid when it is being dragged.
   min-height: calc(100vh - 50px);
   margin-top: 50px;
   /* padding: 30px; */
-  background-color: #E5E5E5;
+  color: black;
+  background-color: var(--blue);
   -webkit-transition: margin-left 0.3s ease;
   -o-transition: margin-left 0.3s ease;
   transition: margin-left 0.3s ease;
@@ -14922,7 +14923,7 @@ be a descendant of the grid when it is being dragged.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #009688;
+  background-color: blue;
   z-index: 1030;
   /* padding-right: 15px; */
 }
@@ -15256,7 +15257,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus {
   background: #0d1214;
-  border-left-color: #009688;
+  border-left-color: var(--blue);
   text-decoration: none;
   color: #fff;
 }
@@ -15530,7 +15531,7 @@ be a descendant of the grid when it is being dragged.
 
 .tile {
   position: relative;
-  background: #ffffff;
+  background: var(--blue);
   border-radius: 3px;
   padding: 20px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);

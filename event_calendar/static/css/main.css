@@ -14865,7 +14865,7 @@ be a descendant of the grid when it is being dragged.
 .app-content {
   min-height: calc(100vh - 50px);
   margin-top: 50px;
-  padding: 30px;
+  /* padding: 30px; */
   background-color: #E5E5E5;
   -webkit-transition: margin-left 0.3s ease;
   -o-transition: margin-left 0.3s ease;
@@ -14924,14 +14924,14 @@ be a descendant of the grid when it is being dragged.
   display: flex;
   background-color: #009688;
   z-index: 1030;
-  /* padding-right: 15px; */
+  padding-right: 15px;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .app-header {
     padding-right: 30px;
   }
-} */
+}
 
 @media print {
   .app-header {
@@ -14968,7 +14968,7 @@ be a descendant of the grid when it is being dragged.
   color: #fff;
 }
 
-/* .app-sidebar__toggle {
+.app-sidebar__toggle {
   padding: 0 15px;
   font-family: fontAwesome;
   color: #fff;
@@ -14989,13 +14989,13 @@ be a descendant of the grid when it is being dragged.
 .app-sidebar__toggle:before {
   content: "\f0c9";
   font-size: 21px;
-} 
+}
 
 .app-sidebar__toggle:focus, .app-sidebar__toggle:hover {
   color: #fff;
   background-color: #00635a;
   text-decoration: none;
-} */
+}
 
 .app-nav {
   display: -webkit-box;

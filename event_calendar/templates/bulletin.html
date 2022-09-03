@@ -1,12 +1,49 @@
-<!-- GitHub Python/Flask Calendar Code to import
-    -> https://github.com/Kartones/flask-calendar
-    -> Want to do more research
-    -> will probably need its own folder?
--->
 {% extends "base/base.html" %}
 {% block title %}Bulletin{% endblock %}
 {% block content %}
-    <h1 align="center">Calendar Stuff</h1>
     <h1 align="center">Meetings</h1>
     <h1 align="center">Future KoC Events</h1>
+ 
+    <div align="center">
+        <a href=file:///G:/My%20Drive/Bulletins/bulletinpg1.pdf>
+        <img title="bulletinpg1" src=/static/images/bulletinpg1.png alt="bulletinpg1" /><br /><br /><br />
+        </a>
+    </div>  
+    <div align="center">
+        <a href=file:///G:/My%20Drive/Bulletins/bulletinpg2.pdf>
+        <img title="bulletinpg2" src=/static/images/bulletinpg2.png alt="bulletinpg2" /><br /><br /><br />
+        </a>
+    </div>  
+    <div align="center">
+        <a href=https://drive.google.com/file/d/1jvoZXWF-w3bjnVetOtGp7_ThO8sLe3y5/view?usp=sharing>
+        <img title="iclogo" src=/static/images/iclogo.png alt="iclogo" /><br /><br /><br />
+        </a>
+    </div>  
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src=file:///G:/My%20Drive/Bulletins/bulletinpg1.pdf class="d-block w-100" alt="Page 1 & 4">
+          </div>
+          <div class="carousel-item">
+            <img src=file:///G:/My%20Drive/Bulletins/bulletinpg2.pdf class="d-block w-100" alt="Page 2 & 3">
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 {% endblock %}

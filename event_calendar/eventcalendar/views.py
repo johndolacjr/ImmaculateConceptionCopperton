@@ -20,10 +20,10 @@ class Social(LoginRequiredMixin, View):
     model = Event
     template_name = "social.html"
 
-class Calendar2(LoginRequiredMixin, View):
+class Bulletin(LoginRequiredMixin, View):
     login_url = "accounts:signin"
     model = Event
-    template_name = "calendar2.html"
+    template_name = "bulletin.html"
 
 class History(LoginRequiredMixin, View):
     login_url = "accounts:signin"

@@ -52,14 +52,14 @@
               <a class="app-menu__item active" id="home" href="/home"><i class="app-menu__icon fa fa-home"></i><span class="app-menu__label">Home</span></a>
             </li>
             <li>
-              <a class="app-menu__item active" href="{% url 'dashboard' %}"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a>
-            </li>
-            <li>
               <a class="app-menu__item active" href="{% url 'calendarapp:calendar' %}"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Calendar</span></a>
             </li>
             <li class="treeview">
               <a class="app-menu__item active" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Events</span><i class="treeview-indicator fa fa-angle-right"></i></a>
               <ul class="treeview-menu">
+                <li>
+                  <a class="treeview-item" href="{% url 'dashboard' %}"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a>
+                </li>
                 <li>
                   <a class="treeview-item" href="{% url 'calendarapp:running_events' %}"><i class="icon fa fa-circle-o"></i> Running</a>
                 </li>
@@ -75,7 +75,7 @@
               <a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Docs</span></a>
             </li> {% endcomment %}
             <li>
-              <a class="app-menu__item active" id="calendar2" href="/calendar2"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Church Calendar</span></a>
+              <a class="app-menu__item active" id="bulletin" href="/bulletin"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Bulletin</span></a>
             </li>
             <li>
               <a class="app-menu__item active" id="history" href="/history"><i class="app-menu__icon fa fa-history"></i><span class="app-menu__label">The Knight's Corner</span></a>
@@ -262,7 +262,7 @@
               <a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Docs</span></a>
             </li> {% endcomment %}
             {% comment %} <li>
-              <a class="app-menu__item" id="calendar2" href="/calendar2"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Church Calendar</span></a>
+              <a class="app-menu__item" id="bulletin" href="/bulletin"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Church Calendar</span></a>
             </li>
             <li>
               <a class="app-menu__item" id="history" href="/history"><i class="app-menu__icon fa fa-history"></i><span class="app-menu__label">The Knight's Corner</span></a>

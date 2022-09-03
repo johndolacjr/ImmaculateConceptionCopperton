@@ -159,10 +159,10 @@ class Social(LoginRequiredMixin, generic.ListView):
     model = Event
     template_name = "social.html"
 
-class Calendar2(LoginRequiredMixin, generic.ListView):
+class Bulletin(LoginRequiredMixin, generic.ListView):
     login_url = "accounts:signin"
     model = Event
-    template_name = "calendar2.html"
+    template_name = "bulletin.html"
 
 class History(LoginRequiredMixin, generic.ListView):
     login_url = "accounts:signin"

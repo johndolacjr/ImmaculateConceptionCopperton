@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class Calendar2Config(AppConfig):
+class BulletinConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'calendar2'
+    name = 'bulletin'

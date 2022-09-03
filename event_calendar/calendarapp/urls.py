@@ -7,7 +7,7 @@ app_name = "calendarapp"
 
 urlpatterns = [
     path("financial/", views.Financial.as_view(), name="financial"),
-    path("home/", views.Home.as_view(), name="home"),
+    path("", views.Home.as_view(), name="home"),
     path("social/", views.Social.as_view(), name="social"),
     path("bulletin/", views.Bulletin.as_view(), name="bulletin"),
     path("history/", views.History.as_view(), name="history"),

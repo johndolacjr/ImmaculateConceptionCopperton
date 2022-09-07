@@ -29,4 +29,4 @@ email: chriscooley1984@yahoo.com
 .app-header = navbar color
 .app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus = gaps between navbar tabs
 .tile = calendar background color
-#343a40
+#29323b

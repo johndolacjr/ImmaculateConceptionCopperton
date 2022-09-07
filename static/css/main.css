@@ -16734,3 +16734,25 @@ be a descendant of the grid when it is being dragged.
 .user .user-settings label {
   color: #666;
 }
+
+.columnone {
+  float: left;
+  width: 33.33%;
+}
+
+.columntwo {
+  float: center;
+  width: 33.33%;
+}
+
+.columnthree {
+  float: right;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.rowone:after {
+  content: "";
+  display: table;
+  clear: both;
+}

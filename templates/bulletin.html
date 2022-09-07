@@ -1,23 +1,38 @@
 {% extends "base/base.html" %}
 {% block title %}Bulletin{% endblock %}
 {% block content %}
-    <h1 align="center">Meetings</h1>
-    <h1 align="center">Future KoC Events</h1>
+
  
-    <div align="center">
-        <a href=file:///G:/My%20Drive/Bulletins/bulletinpg1.pdf>
-        <img title="bulletinpg1" src=/static/images/bulletinpg1.png alt="bulletinpg1" /><br /><br /><br />
-        </a>
-    </div>  
-    <div align="center">
-        <a href=file:///G:/My%20Drive/Bulletins/bulletinpg2.pdf>
-        <img title="bulletinpg2" src=/static/images/bulletinpg2.png alt="bulletinpg2" /><br /><br /><br />
-        </a>
-    </div>  
-    <div align="center">
-        <a>
-        <img title="iclogo" src=/static/images/iclogo.png alt="iclogo" /><br /><br /><br />
-        </a>
-    </div>  
+    <div class="rowone">
+      <div class="columnone">
+        <div align="left">
+          <a href=file:///G:/My%20Drive/Bulletins/bulletinpg1.pdf>
+          <img title="bulletinpg1" src=/static/images/bulletinpg1.png alt="bulletinpg1" /><br
+          </a>
+
+          <a href=file:///G:/My%20Drive/Bulletins/bulletinpg2.pdf>
+          <img title="bulletinpg2" src=/static/images/bulletinpg2.png alt="bulletinpg2" /><br /><br /><br />
+          </a>
+      </div>  
+
+      </div>
+      <div class="columntwo">
+        <div align="center">
+          <a>
+          <img title="iclogo" src=/static/images/iclogo.png alt="iclogo" /><br /><br /><br />
+          </a>
+      </div> 
+
+      </div>
+      <div class="columnthree">
+        <h1 align="right">Meetings</h1>
+        <h1 align="right">Future KoC Events</h1>
+
+      </div>
+    </div>
+    
+    
+
+ 
     </div>
 {% endblock %}

@@ -1,11 +1,11 @@
 # Purpose: 
 Develop a web application for The Immaculate Conception Church in Copperton, UT. The
 
-# Technology Used:
-* Heroku, Bootstrap, Flask
+# Frameworks Used:
+* Heroku, Bootstrap, Django
 
 # Languages: 
-* HTML, CSS, Python, JavaScript, 
+* HTML, CSS, Python, JavaScript
 
 # How to Use the Web Page: 
 
@@ -27,6 +27,8 @@ email: chriscooley1984@yahoo.com
 .app-content = background color
 .app-content = text color
 .app-header = navbar color
-.app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus = gaps between navbar tabs
+.app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus = navbar tabs
 .tile = calendar background color
+.app-nav__item = login/logout dropdown
+.app-title = Spacing/margin between main page and navbar
 #29323b

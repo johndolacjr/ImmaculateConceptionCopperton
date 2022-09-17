@@ -75,16 +75,16 @@
               <a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Docs</span></a>
             </li> {% endcomment %}
             <li>
-              <a class="app-menu__item active" id="bulletin" href="/bulletin"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Bulletin</span></a>
+              <a class="app-menu__item active" id="bulletin" href="/bulletin"><i class="app-menu__icon fa fa-commenting"></i><span class="app-menu__label">Bulletin</span></a>
             </li>
             <li>
-              <a class="app-menu__item active" id="history" href="/history"><i class="app-menu__icon fa fa-history"></i><span class="app-menu__label">The Knight's Corner</span></a>
+              <a class="app-menu__item active" id="history" href="/history"><i class="app-menu__icon fa fa-envelope"></i><span class="app-menu__label">The Knight's Corner</span></a>
             </li>
             <li>
               <a class="app-menu__item active" id="financial" href="/financial"><i class="app-menu__icon fa fa-money"></i><span class="app-menu__label">Donations</span></a>
             </li>
             <li>
-              <a class="app-menu__item active" id="social" href="/social"><i class="app-menu__icon fa fa-share"></i><span class="app-menu__label">Our Community</span></a>
+              <a class="app-menu__item active" id="social" href="/social"><i class="app-menu__icon fa fa-group"></i><span class="app-menu__label">Our Community</span></a>
             </li>
             {% comment %} <li>
               <a class="app-menu__item active" id="logout" href="/logout"><i class="app-menu__icon fa fa-logout"></i><span class="app-menu__label">Logout</span></a>
@@ -108,14 +108,14 @@
           </li>{% endcomment %}
           <!-- User Menu-->
           <li class="dropdown">
-            <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+            <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-sign-out fa-lg"></i></a>
             <ul class="dropdown-menu settings-menu dropdown-menu-right">
-              <li>
+              {% comment %} <li>
                 <a class="dropdown-item" href="#"><i class="fa fa-cog fa-lg"></i> Settings</a>
               </li>
               <li>
                 <a class="dropdown-item" href="#"><i class="fa fa-user fa-lg"></i> Profile</a>
-              </li>
+              </li> {% endcomment %}
               <li>
                 <a class="dropdown-item" href="{% url 'accounts:signout' %}"><i class="fa fa-sign-out fa-lg"></i> Sign Out</a>
               </li>

@@ -33,4 +33,5 @@ email: chriscooley1984@yahoo.com
 .app-title = Spacing/margin between main page and navbar
 .app-title h1 = Text "Calendar" CSS
 .app-title p = Text "Event Calendar" CSS
-#29323b
+Navbar Color = #29323b  
+.app-menu__item = navbar header spacing stuff

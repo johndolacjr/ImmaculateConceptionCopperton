@@ -382,6 +382,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 1.75rem;
+  margin-left: 100px;
 }
 
 h3, .h3 {

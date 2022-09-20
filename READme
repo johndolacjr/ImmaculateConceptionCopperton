@@ -35,3 +35,6 @@ email: chriscooley1984@yahoo.com
 .app-title p = Text "Event Calendar" CSS
 Navbar Color = #29323b  
 .app-menu__item = navbar header spacing stuff
+body = More navbar spacing stuff (test with font-size and font-family)
+h2, .h2 = Immaculate Conception Parish
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 = Immaculate Conception Parish

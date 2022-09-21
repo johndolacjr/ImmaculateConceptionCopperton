@@ -16739,24 +16739,38 @@ be a descendant of the grid when it is being dragged.
   color: #666;
 }
 
-.columnone {
+/* .homecontainer {
+  width:100vw;
+  height:100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 100px;
+  gap: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+} */
+
+.col-left {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  background-color: whitesmoke;
+  width: 25%;
+  height: 100%;
   float: left;
-  width: 33.33%;
 }
 
-.columntwo {
-  float: center;
-  width: 33.33%;
+.col-center {
+  grid-column-start: 3 / span 3;
+  grid-column-end: 4 / span 1;
+  width: 50%;
+  float: left;
 }
 
-.columnthree {
-  float: right;
-  width: 33.33%;
-}
-
-/* Clear floats after the columns */
-.rowone:after {
-  content: "";
-  display: table;
-  clear: both;
+.col-right {
+  grid-column-start: 5 / span 3;
+  grid-column-end: 6 / span 1;
+  background-color: whitesmoke;
+  width: 25%;
+  float: left;
 }

@@ -24,8 +24,7 @@ email: chriscooley1984@yahoo.com
 
 
 
-.app-content = background color
-.app-content = text color
+.app-content = text and background color
 .app-header = navbar color
 .app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus = navbar tabs
 .tile = calendar background color
@@ -35,6 +34,12 @@ email: chriscooley1984@yahoo.com
 .app-title p = Text "Event Calendar" CSS
 Navbar Color = #29323b  
 .app-menu__item = navbar header spacing stuff
-body = More navbar spacing stuff (test with font-size and font-family)
-h2, .h2 = Immaculate Conception Parish
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 = Immaculate Conception Parish
+body = More navbar spacing stuff (test with font-size and font-family) Also affects Date and Year header for calendar
+h1, h2, h3, h4, h5, h6 = Immaculate Conception Parish
+h2, .h2 = Immaculate Conception Parish and Date and Year header for calendar
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 = Immaculate Conception Parish and Date and Year header for calendar
+.list-unstyled, .app-nav, .app-menu, .treeview-menu = Immaculate Conception Parish
+.fc button = Month/Week/Day/List on calendar
+.fc button .fc-icon = Month/Week/Day/List on calendar
+.fc .fc-toolbar > * > :first-child = Arrows on calendar
+.fc-toolbar h2 = Date and Year header for calendar

@@ -16752,29 +16752,32 @@ be a descendant of the grid when it is being dragged.
 }
 
 .col-left {
-  grid-column: 1 / span 3;
-  grid-row: 1 / span 1;
-  background-color: whitesmoke;
+  /* grid-column: 1 / span 3;
+  grid-row: 1 / span 1; */
+  /* background-color: whitesmoke; */
   width: 50%;
   height: 100%;
-  margin-left: 15%;
+  margin-left: 10%;
   float: left;
 }
 
 .col-center {
-  /* grid-column-start: 3 / span 3; */
-  grid-row: 2 / span 1;
-  width: 50%;
-  float: left;
+  /* grid-column-start: 3 / span 3;
+  grid-row: 2 / span 1; */
+  width: 25%;
+  height: 25%;
+  float: center;
 }
 
 .col-right {
   /* grid-column-start: 5 / span 3; */
-  grid-row: 2 / span 1;
-  /* background-color: whitesmoke; */
-  width: 0%;
-  float: left;
-  transform: scale(0.75, 0.75);
+  /* grid-row: 2 / span 1; */
+  /* background: whitesmoke; */
+  width: 50%;
+  height: 100%;
+  margin-right: 10%;
+  float: right;
+  /* transform: scale(0.75, 0.75); */
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -16860,4 +16863,4 @@ be a descendant of the grid when it is being dragged.
   opacity: 1;
 }
 
-/* I am adding something */
+/*  this is my buffer so I know when to stop CTRL + Z'ing if I jack stuff up!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! @@@!!! */

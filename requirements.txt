@@ -49,4 +49,4 @@ tomli==2.0.1
 urllib3==1.26.12
 virtualenv==20.16.5
 whitenoise==6.2.0
-wrapt==1.14.1
+wrapt==1.13.1

@@ -16798,7 +16798,7 @@ be a descendant of the grid when it is being dragged.
 .form-right {
   float: left;
   width: 70%;
-  padding: 5%;
+  padding: 1%;
 }
 
 /* Position the image container (needed to position the left and right arrows) */

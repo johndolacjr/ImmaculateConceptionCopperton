@@ -16743,6 +16743,7 @@ be a descendant of the grid when it is being dragged.
 .homecontainer {
   width: 100vw;
   height: 100vh;
+  padding: 2%;
   /* width:100%;
   height:100%;
   display: grid;
@@ -16755,7 +16756,8 @@ be a descendant of the grid when it is being dragged.
 
 .col-left {
   float: left;
-  width: 33.33%;
+  width: 30%;
+  padding: 1%;
 
   /* grid-column: 1 / span 3;
   grid-row: 1 / span 1;
@@ -16767,7 +16769,8 @@ be a descendant of the grid when it is being dragged.
 
 .col-center {
   float: left;
-  width: 33.33%;
+  width: 40%;
+  padding: 1%;
   /* grid-column-start: 3 / span 3;
   grid-row: 2 / span 1;
   width: 33%;
@@ -16777,7 +16780,8 @@ be a descendant of the grid when it is being dragged.
 
 .col-right {
   float: left;
-  width: 33.33%;
+  width: 30%;
+  padding: 1%;
 
   /* grid-column-start: 5 / span 3;
   grid-row: 2 / span 1;
@@ -16793,7 +16797,8 @@ be a descendant of the grid when it is being dragged.
 
 .form-right {
   float: left;
-  width: 66%;
+  width: 70%;
+  padding: 5%;
 }
 
 /* Position the image container (needed to position the left and right arrows) */

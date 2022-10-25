@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "ImmaculateConceptionCopperton",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

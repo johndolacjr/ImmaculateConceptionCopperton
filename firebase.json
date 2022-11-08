@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "ImmaculateConceptionCopperton",
+    "public": "immaculateconceptioncopperton",
     "ignore": [
       "firebase.json",
       "**/.*",
